@@ -16,14 +16,27 @@
 
 ## 安装使用
 
-将 `SKILL.md` 放入 `.claude/skills/duanyongping-perspective/` 目录即可激活。
+### 一键安装（推荐）
 
 ```bash
-mkdir -p .claude/skills/duanyongping-perspective
-cp SKILL.md .claude/skills/duanyongping-perspective/
+curl -sSL https://raw.githubusercontent.com/anneheartrecord/duanyongping-perspective/main/install.sh | bash
 ```
 
-触发词：`段永平视角`、`大道视角`、`用段永平的角度想想`、`如果段永平会怎么做`
+### 手动安装
+
+```bash
+git clone https://github.com/anneheartrecord/duanyongping-perspective.git
+cd duanyongping-perspective
+bash install.sh
+```
+
+### 验证
+
+安装完成后，在 Claude Code 中说以下任意一句即可激活：
+
+- `用段永平的视角帮我看看`
+- `段永平会怎么做`
+- `切换到大道视角`
 
 ## 核心心智模型
 
